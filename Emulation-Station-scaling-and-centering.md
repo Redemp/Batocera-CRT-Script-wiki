@@ -4,11 +4,14 @@
 The script will create the file `es.arg.override` in the folder
 `/userdata/system`
 
+# Size
 <img src="https://github.com/ZFEbHVUE/Batocera-CRT-Script/blob/main/wiki_page/scaling_crt.png" width=50% height=50%>
 
 `screensizeoffset_x = width`
 
 `screensizeoffset_y= height`
+
+# Position
 
 Top-left is the anchor, increasing will stretch the image out to the right and downwards; decreasing will squash the image from the right side toward the left and from the bottom upwards.
 
