@@ -4,7 +4,7 @@
 The script will create the file `es.arg.override` in the folder
 `/userdata/system`
 
-![screensizeoffset](https://github.com/ZFEbHVUE/Batocera-CRT-Script/blob/main/wiki_page/scaling_crt.png)
+<img src="https://github.com/ZFEbHVUE/Batocera-CRT-Script/blob/main/wiki_page/scaling_crt.png" width=50% height=50%>
 
 `screensizeoffset_x = width`
 
@@ -17,7 +17,7 @@ Top-left is the anchor, increasing will stretch the image out to the right and d
 `screensizeoffset_y 00`
 
 
-![screenoffset](https://github.com/ZFEbHVUE/Batocera-CRT-Script/blob/main/wiki_page/offset_crt.png)
+<img src="https://github.com/ZFEbHVUE/Batocera-CRT-Script/blob/main/wiki_page/offset_crt.png" width=50% height=50%>
 
 We will start by aligning the top-left of the image with the top-left corner of the display. This will be important for the next step (scaling). We will do this by utilizing the following argument: 
 Move the canvas by [x] pixels right and [y] pixels down.
