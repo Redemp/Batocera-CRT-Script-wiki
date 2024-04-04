@@ -17,6 +17,12 @@ The file will will contain these vales
 * screenoffset_x 0
 * screenoffset_y 0 
 
+Every time you make a change you need to restart Emulation Station.
+
+Do this from SSH using the command
+
+`batocera-es-swissknife --restart`
+
 # Offset -> Position
 
 <img src="https://github.com/ZFEbHVUE/Batocera-CRT-Script/blob/main/wiki_page/offset_crt.png" width=50% height=50%>
