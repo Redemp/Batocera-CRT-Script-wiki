@@ -1,11 +1,15 @@
 ### How to add and test resolutions
   
-  From terminal type
-`switchres 320 240 60 -i switchres.ini -c`
+Let's start with adding the resolution **384x224@60hz**
 
-It should output a single line similar to this: 
+From terminal type
 
-`Switchres: Modeline "320x240_60 15.660000KHz 60.000000Hz" 6.514560 320 333 364 416 240 242 245 261   -hsync -vsync`
+`switchres 384 224 60 -i switchres.ini -c`
+
+It should output two lines similar to this: 
+
+`Switchres: Calculating best video mode for 384x224@60.000000 orientation: normal`
+`Switchres: Modeline "384x224_50 15.600000KHz 50.000000Hz" 7.378800 384 395 430 473 224 259 261 312   -hsync -vsync`
 
 Now we know that it works for you monitor profile. 
 
@@ -13,13 +17,13 @@ Now let's add it to `videomodes.conf`
 
 Edit: `/userdata/system/videomodes.conf`
 
-`320x240.60.00:320x240 60 Hz`
+`384x224.60.00:384x224 60 Hz`
 
-The first line `320x240.60.00` is what is read by switchres. 
+The first line `384x224.60.00` is what is read by switchres. 
 
 The second line after `:` is what is displayed in video modes in Emulation Station. 
 
-In this example it is `320x240 60 Hz`
+In this example it is `384x224 60 Hz`
 
 You can name it to whatever you want but it is easier to name it to the resolution you added. 
 
