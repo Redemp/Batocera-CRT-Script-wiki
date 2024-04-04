@@ -6,6 +6,10 @@ From terminal type
 
 `switchres 384 224 60 -i switchres.ini -c`
 
+Or using the force `-f` command like this
+
+`switchres 384 224 60 -f 384x224@60 -i switchres.ini -c`
+
 It should output two lines similar to this: 
 
 `Switchres: Calculating best video mode for 384x224@60.000000 orientation: normal`
