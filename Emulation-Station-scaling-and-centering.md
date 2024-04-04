@@ -1,3 +1,11 @@
+# Foreword
+So you have setup your geometry as best as you can using the service menu and the CRT Geometry Tool.
+
+But still Emulation Station is not perfectly centered. 
+
+This is where the es.customsargs comes in. 
+
+
 # es.arg.override
 
 The script will create the file `es.arg.override` in the folder
