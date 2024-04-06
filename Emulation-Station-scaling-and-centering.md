@@ -1,14 +1,16 @@
-# Foreword
-So you have setup your geometry as best as you can using the service menu and the CRT Geometry Tool.
+# Overview
 
-But still Emulation Station is not perfectly centered. 
+This guide describes manual scaling and centering for cases in which these
+operations within the service menu and CRT geometry tool do not produce
+a perfectly centered screen.
 
-This is where the es.customsargs comes in. 
+Manual adjustments can be configured using the file /userdata/system/es.arg.override
+which must be edited at the command line.
 
 
 # es.arg.override
 
-The script will create the file `es.arg.override` in the folder
+Executing the CRT script will create the file `es.arg.override` in the folder
 `/userdata/system`
 
 The file will will contain these vales
@@ -17,17 +19,17 @@ The file will will contain these vales
 * screenoffset_x 0
 * screenoffset_y 0 
 
-Every time you make a change you need to restart Emulation Station.
+This file can be edited at the command line (via SSH) using nano or equivalent
+editor.
 
-Do this from SSH using the command
-
+Every time you make a change you need to restart Emulation Station using
 `batocera-es-swissknife --restart`
 
 # Offset -> Position
 
 <img src="https://github.com/ZFEbHVUE/Batocera-CRT-Script/blob/main/wiki_page/offset_crt.png" width=50% height=50%>
 
-Lets start with the Offset
+Let's start with the Offset
 
 We will start by aligning the top-left of the image with the top-left corner of the display. This will be important for the next step (Scaling -> Size). We will do this by utilizing the following argument: 
 
@@ -67,10 +69,13 @@ If your resolution is `640 480` and you put for example
 
 You will get in the result:
 
+This configuration is equivalent to the following configuration
+in `batocera.conf`.
+
 `es.customsargs=--screensize 650 470 --screenoffset -5 5`
 
-In  `batocera.conf`
 
-And each time your re-use the script.  
+The file `/userdata/system/es.arg.override` will be erased every time the CRT script
+is executed. Backing up the file is recommended.
 
-The file `/userdata/system/es.arg.override` will be erased so make a backup.
+To persist the changes, execute `batocera-save-overlay`.
