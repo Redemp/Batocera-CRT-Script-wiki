@@ -13,7 +13,7 @@ which must be edited at the command line.
 Executing the CRT script will create the file `es.arg.override` in the folder
 `/userdata/system`
 
-The file will will contain these vales
+The file will initially contain the following values
 * screensizeoffset_x 0
 * screensizeoffset_y 0
 * screenoffset_x 0
